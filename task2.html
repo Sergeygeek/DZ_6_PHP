@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h3>Добро пожаловать в простое приложение <i>калькулятор</i></h3>
+    <form action="" method="get">
+        <p>
+            <label>Первое число
+            <input type="number" name="f_number" placeholder="Введите число">
+            </label>
+        </p>
+        <p>
+            <label>Второе число
+            <input type="number" name="s_number" placeholder="Введите число">
+            </label>
+        </p>
+        <p>
+            <label>Выберите действие:</label>
+            <button class="action" value="+">+</button>
+            <button class="action" value="-">-</button>
+            <button class="action" value="*">*</button>
+            <button class="action" value="/">/</button>
+        </p>
+        <button type="submit" value="count">Посчитать</button>
+    </form>
+
+
+<script>
+    var actions = document.querySelectorAll('.action');
+    
+    actions.forEach( function (el, index){
+        el.addEventListener('click', function (e){
+            e.preventDefault();
+        });
+    });
+        
+</script>
+</body>
+
+</html>
